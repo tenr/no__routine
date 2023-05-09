@@ -15,10 +15,6 @@ function TopNav() {
   return (
     <>
       <nav className="top-nav">
-        <Link className="top-nav__heading-link">
-          <h1 className="top-nav__heading-text">No Routine</h1>
-        </Link>
-        {/* <div className="top-nav__left"> */}
         <img
           // className="top-nav__menu-icon"
           src={hamburger}
@@ -31,16 +27,18 @@ function TopNav() {
           }`}
         >
           <a href="#" className="top-nav__dropdown-item">
-            Link 1
+            HOME
           </a>
           <a href="#" className="top-nav__dropdown-item">
-            Link 2
+            ABOUT
           </a>
           <a href="#" className="top-nav__dropdown-item">
-            Link 3
+            PROFILE
           </a>
         </div>
-        {/* </div> */}
+        <Link className="top-nav__heading-link">
+          <h1 className="top-nav__heading-text">No Routine</h1>
+        </Link>
       </nav>
     </>
   );

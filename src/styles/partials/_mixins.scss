@@ -5,6 +5,18 @@
     @content;
   }
 }
+
+@mixin mobile-med {
+  @media (min-width: (375px)) {
+    @content;
+  }
+}
+@mixin mobile-large {
+  @media (min-width: (425px)) {
+    @content;
+  }
+}
+
 @mixin tablet-query {
   @media (min-width: map-get($breakpoints, "tablet")) {
     @content;
