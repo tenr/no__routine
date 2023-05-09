@@ -50,9 +50,14 @@
       left: 13%;
     }
     @include tablet-query {
-      height: 76vh;
-      width: 80vw;
+      height: 90vh;
+      width: 67vw;
       left: 5%;
+    }
+    @include desktop-query {
+      height: 93vh;
+      width: 47vw;
+      left: 6%;
     }
   }
 
@@ -69,8 +74,9 @@
     line-height: 4rem;
     color: #333;
     text-decoration: none;
+    font-family: "Carpenter";
     // border-radius: 5px;
-    // transition: background-color 0.2s ease-in-out;
+    transition: color 0.28s ease-in-out;
 
     @include tablet-query {
       display: flex;
