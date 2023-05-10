@@ -1,0 +1,126 @@
+@use "../../styles/partials/globals" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  //   width: 18rem;
+  margin: 2rem auto;
+  padding: 0rem 3rem;
+  gap: 1.8rem;
+  align-items: center;
+
+  &__label-name {
+    align-self: flex-start;
+    display: none;
+  }
+  &__input-name {
+    background-color: #686868;
+    border: 1px solid black;
+    color: white;
+    height: 2.5rem;
+    width: 18rem;
+    align-self: center;
+    // transform: skewX(-40deg);
+    transform: skew(8deg, -1deg);
+    font-family: "Anderson Grotesk", sans-serif;
+    letter-spacing: 0.1rem;
+    padding-left: 0.5rem;
+
+    &::placeholder {
+      padding-left: 0.5rem;
+      color: white;
+    }
+    &:focus {
+      outline: rgb(255, 0, 0);
+      border: 1px solid white;
+    }
+  }
+  &__label-pronouns {
+    display: none;
+  }
+  &__drop-pronouns {
+    background-color: #686868;
+    border: 1px solid black;
+    color: white;
+    height: 2.5rem;
+    width: 18rem;
+    transform: skew(3deg, 1deg);
+    font-family: "Anderson Grotesk";
+    letter-spacing: 0.1rem;
+    padding-left: 0.5rem;
+
+    &:focus {
+      outline: rgb(255, 0, 0);
+      border: 1px solid white;
+    }
+  }
+  &__label-top {
+    display: none;
+  }
+  &__drop-tops {
+    background-color: #686868;
+    border: 1px solid black;
+    color: white;
+    height: 2.5rem;
+    width: 18rem;
+    transform: skewY(3deg, 1deg);
+    font-family: "Anderson Grotesk";
+    letter-spacing: 0.1rem;
+    padding-left: 0.5rem;
+
+    &:focus {
+      outline: rgb(255, 0, 0);
+      border: 1px solid white;
+    }
+  }
+  &__label-bottom {
+    display: none;
+  }
+  &__drop-bottom {
+    background-color: #686868;
+    border: 1px solid black;
+    color: white;
+    height: 2.5rem;
+    width: 18rem;
+    transform: skew(2.2deg, 1deg);
+    font-family: "Anderson Grotesk";
+    letter-spacing: 0.1rem;
+    padding-left: 0.5rem;
+
+    &:focus {
+      outline: rgb(255, 0, 0);
+      border: 1px solid white;
+    }
+  }
+  &__label-fav {
+    display: none;
+  }
+  &__drop-fav {
+    background-color: #686868;
+    border: 1px solid black;
+    color: white;
+    height: 2.5rem;
+    width: 18rem;
+    transform: skew(2deg, -1deg);
+    font-family: "Anderson Grotesk";
+    letter-spacing: 0.1rem;
+    padding-left: 0.5rem;
+
+    &:focus {
+      outline: rgb(255, 0, 0);
+      border: 1px solid white;
+    }
+  }
+  &__button-submit {
+    outline: none;
+    border: none;
+    height: 5rem;
+    width: 12rem;
+    background-image: url("../../assets/Button.png");
+    background-size: 100%;
+    background-position: center;
+  }
+}

@@ -32,11 +32,13 @@ function TopNav() {
           <a href="#" className="top-nav__dropdown-item">
             ABOUT
           </a>
-          <a href="#" className="top-nav__dropdown-item">
-            PROFILE
-          </a>
+          <Link to="/user:id">
+            <a href="" className="top-nav__dropdown-item">
+              PROFILE
+            </a>
+          </Link>
         </div>
-        <Link className="top-nav__heading-link">
+        <Link to="/" className="top-nav__heading-link">
           <h1 className="top-nav__heading-text">No Routine</h1>
         </Link>
       </nav>
