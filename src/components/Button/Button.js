@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Button.scss"; // import the component's stylesheet
-import button from "../../assets/Button.png";
+import spikes from "../../assets/Button.png";
 
 function Button({ onClick, disabled }) {
   return (
@@ -12,22 +12,17 @@ function Button({ onClick, disabled }) {
       disabled={disabled}
     >
       {/* Replace myButtonImage.png with the filename of your image */}
-      <span
-        className="spike-button__label"
-        style={{ backgroundImage: `url(${button})` }}
-      >
-        Submit
-      </span>
+      <span className="spike-button__label">Submit</span>
     </button>
   );
 }
 
-CustomButton.propTypes = {
+Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 };
 
-CustomButton.defaultProps = {
+Button.defaultProps = {
   disabled: false,
 };
 

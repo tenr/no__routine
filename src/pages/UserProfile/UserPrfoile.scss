@@ -123,4 +123,9 @@
     background-size: 100%;
     background-position: center;
   }
+  &__btn {
+    background-image: url("../../assets/Button.png");
+    width: 6rem;
+    height: 3rem;
+  }
 }

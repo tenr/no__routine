@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Button from "../../components/Button/Button"
-
+import Button from "../../components/Button/Button";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -148,7 +147,10 @@ const Form = () => {
         <span className="dropdown-icon"></span>
       </div>
 
-      <Button type="submit">
+      {/* <Button type="submit"> submit </Button> */}
+      <button className="form__btn" type="submit">
+        submit
+      </button>
     </form>
   );
 };
