@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next Pro LT", serif;
+}
+
+@font-face {
+  font-family: "Carpenter";
+  font-weight: 400;
+  src: url("../../assets/Fonts/Carpenter Regular.otf") format("opentype");
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem;
+}
+.top-nav__left {
+  display: flex;
+  justify-content: center;
+}
+.top-nav__heading-link {
+  text-decoration: none;
+}
+.top-nav__heading-text {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+.top-nav__dropdown {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+  width: 78vw;
+  padding: 1rem;
+  background-image: url("../../assets/menu-bg.png");
+  background-size: 100%;
+  background-position: center;
+  height: 40vh;
+  background-repeat: no-repeat;
+  transform: scale(0%);
+  transform-origin: top;
+  transition: transform 0.2s ease-in-out;
+  z-index: 999;
+}
+@media (min-width: 375px) {
+  .top-nav__dropdown {
+    height: 50vh;
+    left: 15%;
+  }
+}
+@media (min-width: 425px) {
+  .top-nav__dropdown {
+    height: 55vh;
+    width: 75vw;
+    left: 13%;
+  }
+}
+@media (min-width: 768px) {
+  .top-nav__dropdown {
+    height: 90vh;
+    width: 67vw;
+    left: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .top-nav__dropdown {
+    height: 93vh;
+    width: 47vw;
+    left: 6%;
+  }
+}
+.top-nav__menu-icon:hover {
+  rotate: 2%;
+}
+.top-nav__dropdown-item {
+  display: flex;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  color: #333;
+  text-decoration: none;
+  font-family: "Carpenter";
+  transition: color 0.28s ease-in-out;
+}
+@media (min-width: 768px) {
+  .top-nav__dropdown-item {
+    display: flex;
+    font-size: 2.8rem;
+    color: #333;
+    text-decoration: none;
+    line-height: 12rem;
+  }
+}
+.top-nav__dropdown-item:hover {
+  color: #ff0000;
+}
+
+.top-nav__dropdown--open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(100%);
+}/*# sourceMappingURL=TopNav.css.map */
